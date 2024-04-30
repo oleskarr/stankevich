@@ -7,12 +7,23 @@
     <title>Document</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    
+    <!--#app - контейнер для нашего веб-приложения-->
+   <div id="app" class="container mx-auto w-full h-full">
+     <header class="p-3 text-white flex justify-between py-4 bg-rose-200 rounded-[15px] mt-[10px] ">
+        <h2 class="text-3xl border-solid border-rose-500 p-2 border-b-2">Олеся Станкевич</h2>
+        <nav class="flex gap-4 text-xl hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px] ">
+           <a href="#">Блог</a>
+           <a href="#">Домашние задания</a>
+           <a href="#">Портфолио</a>
+           <a href="#">Обо мне</a>
+           <a href="#">Контакты</a> 
+        </nav>
+     </header>
+     <main></main>
+     <footer></footer>
+   </div>   
 </body>
 </html>
