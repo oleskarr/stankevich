@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Задание 11.Создание графика</title> 
+    <!-- подключаем TailwindCSS --> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- подключаем свои шрифты --> 
+    <link rel="stylesheet" href="./style.css"> 
+</head> 
+<body> 
+    <!-- навигация задания --> 
+    <nav class="w-full h-max flex flex-row-reverse bg-rose-100 p-2 *:text-rose-950 "> 
+        <ul> 
+            <li class="group"> 
+                <label for="mini" class="cursor-pointer block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" /></svg></label> 
+                <input type="checkbox" id="mini" class="hidden peer/mini"> 
+                <ul class="hidden peer-checked/mini:flex flex-col absolute right-2 border border-rose-300 rounded-[5px] divide-y divide-rose-200 bg-rose-100"> 
+                    <li><a class="hover:bg-rose-300 block p-1" target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-sozdanie-grafika/">Ссылка на задание</a></li> 
+                    <li><a class="hover:bg-rose-300 block p-1" href="http://127.0.0.1:5500/">На главную</a></li> 
+                </ul> 
+            </li> 
+        </ul> 
+    </nav> 
+    <!-- выполняем задание внутри id="app" --> 
+    <div id="app" class="w-screen h-screen flex justify-center items-center"> 
+       <div class="w-[600px]">
+        <h1 class="font-semibold text-2xl">Creating a chart</h1>
+		<p class="text-slate-400">To create a chart, we need to instantiate the <code class="text-black">Chart</code> class. To do this, we need to pass in the 2d context of where we want to draw the chart. Here's an example.</p>
+		<pre class="bg-slate-100 rounded-sm p-2"><code><span class="text-blue-800">&lt;canvas</span> <span class="text-green-600">id=</span><span class="text-red-700">"myChart" </span><span class="text-green-600">width=</span><span class="text-red-700">"400"</span> <span class="text-green-600">height=</span><span class="text-red-700">"400"</span><span class="text-blue-800">&gt;&lt;/canvas&gt;</span></code></pre>
+        <br>
+		<pre class="bg-slate-100 rounded-sm p-2"><code><span class="text-slate-400">// Get the context of the canvas element we want to select</span></code>
+<code><span class="font-bold">var</span> ctx = <span class="text-blue-600">document</span>.getElementById( <span class="text-red-700">"myChart"</span> ).getContext(<span class="text-red-700">"2d"</span>);</code>
+<code><span class="font-bold">var</span> myNewChart = <span class="font-bold">new</span> Chart(ctx).PolarArea(data);</code></pre>
+		<p class="text-slate-500">We can also get the context of our canvas with jQuery. to do this, we need to get the DOM node out of the jQuery collection, and call the <code class="text-slate-500 bg-slate-100 ">getContext("2d")</code> method on that.</p>
+        <br>
+		<pre class="bg-slate-100 rounded-sm p-2 overflow-x-scroll w-[550px]"><code><span class="text-slate-400">// Get context with jQuery - using jQuery's .get() method.</span></code>
+<code><span class="font-bold">var</span> ctx = $(<span class="text-red-700">"#myChart"</span>).get(<span class="text-blue-800">0</span>).getContext(<span class="text-red-700">"2d"</span>);</code>
+<code><span class="text-slate-400">// This will get the first returned node in the jQuery collection</span></code>
+<code><span class="font-bold">var</span> myNeChart = <span class="font-bold">new</span> Chart(ctx);</code></pre>
+		<p>After we're instantiated the Chart class on the canvas we want to draw on, Chart.js will handle the scaling for retina displays.</p>
+       </div>
+    </div> 
+</body> 
+</html>

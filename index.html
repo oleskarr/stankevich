@@ -9,32 +9,65 @@
 </head>
 <body>
      <!--#app - контейнер для нашего веб-приложения-->
-   <div id="app" class="mx-auto w-full h-full grid grid-cols-12 auto-rows-max">
-    <header class=" flex justify-between col-span-12 px-[20px]  h-max text-white py-4 bg-rose-200 ">
-       <h2 class="  text-3xl border-solid  border-rose-300 p-2 border-b-2  font-bold hover:text-rose-400 ">Олеся Станкевич</h2>
+   <div id="app" class="mx-auto w-full h-[100%] grid grid-cols-12 auto-rows-max bg-rose-300 ">
+    
+    <header class=" flex justify-between col-span-12 px-[20px]  h-max text-white py-4  ">
+      <h2 class="  text-3xl  text-rose-100 p-2   font-bold hover:text-rose-400 fixed "><span  class="hover:text-rose-500 ">Ole</span><span class="hover:text-rose-500 ">Sta</span></h2>
        <nav class=" ">
-         <ul class="flex gap-6 relative text-xl hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px]">
+         <ul class="flex gap-6 relative text-xl hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px] ml-[400px]">
            <li><a href="#" class=" hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px]">Блог</a></li>
            <li class=" group-hover:absolute group ">
               <a href="#" class=" hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px]">Домашние задания</a>
-              <ul class="hidden group-hover:block absolute  top-12 bg-rose-400 hover:*:bg-rose-600 rounded-[10px] hover:*:rounded-[10px] *:p-2">
+              <ul class="hidden group-hover:block absolute  top-12 bg-rose-400 hover:*:bg-rose-600 rounded-b-[10px]   *:p-2 hover:rounded-b-[10px]">
                  <li ><a href="#"  class="block w-full h-full " >Часть 1</a></li>
                  <li><a href="#" class="block w-full h-full" >Часть 2</a></li>
-                 <li><a href="#" class="block w-full h-full" >Часть 3</a></li>
-              </ul>
+                 <li><a href="#" class="block w-full h-full  " >Часть 3</a></li>
+               </ul>
+        
            </li>
            <li><a href="#" class=" hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px]">Портфолио </a></li>
            <li><a href="#" class=" hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px]">Обо мне</a></li>
+           <li><a href="#" class=" hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px]">Навыки</a></li>
            <li><a href="#" class=" hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px]">Контакты</a></li>
          </ul>
        </nav>
     </header>
-    <aside class="col-span-3"></aside>
-    <main class="col-span-9">
-     
+    <aside class="col-span-3 bg-rose-300"></aside>
+    <main class="col-span-9 bg-rose-300 ">
+   <div class="flex gap-10 ">
+    <div class="flex flex-col ml-[-300px] mt-[50px]   ">
+      <h1 class=" text-[70px] font-bold flex flex-col font-serif text-rose-600">Hello,World! <span class="mt-[-35px]">I am Olesya</span> <br> </h1>
+    
+   
+      <h2 class="mt-[-100px] text-2xl font-normal text font-serif text-white w-[340px]">and  this is  My  first Pet-Project   made entirely on the  Tailwind CSS library</h2>
+    </div>
+ 
+      <img src="./undraw_woman_ffrd.svg" class="w-[300px] rounded-[50%] h-[300px] ml-[250px] mt-[40px]">
+    </div>
+   <div class="rounded-[50%] border-2  border-rose-600 w-[5000px] h-[500px]  mt-[-300px]"></div>
+      <div class="flex w-full justify-center gap-[150px] items-center mr-[400px] mt-[-150px] mb-[20px]">
+        <div class="bg-rose-500 rounded-xl w-[200px]  flex flex-col  items-center ml-[-250px] p-2" >
+          <img src="./undraw_coffee_time_e8cw.svg" class="rounded-[50%] w-[70px] h-[70px] bg-rose-400 mt-[20px]">
+          <h3>Обо мне</h3>
+          <p class="text-black h-[50px] truncate w-[150px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab veniam facilis quibusdam, iste illum dolorem ipsam excepturi accusantium non praesentium quam dicta dignissimos ullam, optio natus laudantium saepe? Aliquam qui ratione quo molestias provident expedita quas sapiente nisi, explicabo non fugit repellat hic voluptatibus eum suscipit asperiores. Eveniet.</p>
+          <button></button>
+        </div> 
+        <div class="bg-rose-500 rounded-xl w-[200px]  flex flex-col items-center p-2 ">
+          <img src="./undraw_projections_re_ulc6.svg" class="rounded-[50%] w-[70px] h-[70px] bg-rose-400 mt-[20px]">
+          <h3>Навыки</h3>
+          <p class="text-black h-[50px] truncate w-[150px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt non, illo, perferendis vitae ex pariatur iusto laboriosam quisquam earum vel dolorum. Neque architecto expedita explicabo consectetur veritatis? Ipsa odit repellendus quibusdam tempora dolore aspernatur sit officia consectetur. Dicta minima repellat commodi odit sed, quod cum? Iusto aliquid suscipit accusamus repudiandae.</p>
+          <button></button>
+        </div>
+        <div class="bg-rose-500 rounded-xl w-[200px]  flex flex-col items-center p-2 ">
+          <img src="./undraw_product_explainer_8jbm.svg " class="rounded-[50%] w-[70px] h-[70px] bg-rose-400 mt-[20px]">
+          <h3>Где меня найти</h3>
+          <p class="text-black h-[50px] truncate w-[150px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eos! Quasi, mollitia similique error quisquam necessitatibus dolores assumenda perferendis eius rerum, officia aperiam obcaecati eligendi quidem fugit fuga unde iste sed soluta ea voluptas sit perspiciatis eum. Deleniti a sed architecto temporibus aspernatur voluptatum unde, ratione, eum aut, sapiente quo!</p>
+          <button></button>
+        </div>
+      </div>
     </main>
   
-    <footer class="col-span-12">
+    <footer class="col-span-12 ">
    <p class="font-bold text-2xl text-rose-400 bg-rose-200 p-[10px]  ">© 2024</p>
    
     </footer>

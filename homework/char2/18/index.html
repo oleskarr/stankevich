@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Задание 1.Центрированный блок </title> 
+    <title>Задание 18.Две колонки</title> 
     <!-- подключаем TailwindCSS --> 
     <script src="https://cdn.tailwindcss.com"></script> 
     <!-- подключаем свои шрифты --> 
@@ -17,16 +17,27 @@
                 <label for="mini" class="cursor-pointer block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" /></svg></label> 
                 <input type="checkbox" id="mini" class="hidden peer/mini"> 
                 <ul class="hidden peer-checked/mini:flex flex-col absolute right-2 border border-rose-300 rounded-[5px] divide-y divide-rose-200 bg-rose-100"> 
-                    <li><a class="hover:bg-rose-300 block p-1" target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-centrirovannyjj-blok/">Ссылка на задание</a></li> 
+                    <li><a class="hover:bg-rose-300 block p-1" target="_blank" href="http://www.itmathrepetitor.ru/zadachi-po-html-i-css-dve-kolonki/">Ссылка на задание</a></li> 
                     <li><a class="hover:bg-rose-300 block p-1" href="http://127.0.0.1:5500/">На главную</a></li> 
                 </ul> 
             </li> 
         </ul> 
     </nav> 
     <!-- выполняем задание внутри id="app" --> 
-    <div id="app" class="w-screen h-screen flex justify-center items-center bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png')]"> 
-       <div class="w-[300px] h-[200px] border-2 border-black">
-
+    <div id="app" class="w-screen h-full flex justify-center items-center p-4 "> 
+       <div class="grid grid-cols-3 grid-rows-5 *:text-center" >
+        <div class=" font-bold  text-xl w-[600px] h-[100px] col-span-3 row-span-1 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/criss-cross.png')] mt-8 flex items-center justify-center ">
+            HEADER
+       </div>
+       <div class=" col-span-1 row-span-3 font-bold  text-xl bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/checkerboard-cross.png')] p-2 ">
+       <br><br> A<br><br>S<br><br>I<br><br>D<br><br>E
+       </div>
+       <div class=" col-span-2 row-span-3  font-bold col-span text-xl bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/stripes-light.png')] p-2">
+        C<br><br>O<br><br>N<br><br>T<br><br>E<br><br>N<br><br>T
+       </div>
+       <div class="font-bold  text-xl h-[100px] col-span-3 row-span-1 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/triangles_pattern.png')] flex items-center justify-center">
+        FOOTER
+    </div>
        </div>
     </div> 
 </body> 
