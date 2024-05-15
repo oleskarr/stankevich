@@ -1,10 +1,11 @@
 *{box-sizing: border-box;}html,body, #app{width: 100%;height: 100%;}
 
-.poncik {
-    background-color: rosybrown !important;
-    color: black !important;
+.ponchik {
+    background-color: rgb(190 18 60)!important;
+    color: white!important;
 }
 
-.poncik:hover {
-    background-color: red !important;
+.ponchik:hover {
+    background-color: rgb(251 113 133)!important;
+   
 }
