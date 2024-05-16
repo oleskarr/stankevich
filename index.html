@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../../main.css">
+    <title>main</title>
+    <link rel="stylesheet" href="./main.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
      <!--#app - контейнер для нашего веб-приложения--> 
-   <div id="app" class="mx-auto w-full h-[100%] grid grid-cols-12 auto-rows-max bg-rose-300 ">
+   <div id="app" class="ns_grid_template mx-auto w-full h-[100%]  bg-rose-300 ">
     
-    <header class=" flex justify-between col-span-12 px-[20px]  h-max text-white py-4  ">
+    <header class=" flex justify-between  px-[20px]  h-max text-white py-4  ">
       <h2 class="  text-3xl  text-rose-100 p-2   font-bold hover:text-rose-400 fixed "><span  class="hover:text-rose-500 ">Ole</span><span class="hover:text-rose-500 ">Sta</span></h2>
        <nav class=" ">
          <ul class="flex gap-6 relative text-xl hover:*:bg-rose-500  *:p-[10px] *:rounded-[10px] ml-[400px]">
@@ -28,42 +28,40 @@
          </ul>
        </nav>
     </header>
-    <aside class="col-span-3 bg-rose-300"></aside>
-    <main class="col-span-9 bg-rose-300 ">
-   <div class="flex gap-10 ">
-    <div class="flex flex-col ml-[-300px] mt-[50px]   ">
-      <h1 class=" text-[70px] font-bold flex flex-col font-serif text-rose-600">Hello,World! <span class="mt-[-35px]">I am Olesya</span> <br> </h1>
-    
-   
-      <h2 class="mt-[-100px] text-2xl font-normal text font-serif text-white w-[340px]">and  this is  My  first Pet-Project   made entirely on the  Tailwind CSS library</h2>
+    <aside class=" bg-rose-300"></aside>
+    <main class=" bg-rose-300 ">
+   <div class="flex justify-around ">
+        <div class="flex flex-col  ml-[50px] mt-[50px]  ">
+          <h1 class=" text-[70px] font-bold flex flex-col font-serif text-rose-600">Hello,World! <span class=" ">I am Olesya</span> <br> </h1>
+        <h2 class=" text-2xl font-normal text font-serif text-white w-[340px] mt-[-100px]">and  this is  My  first Pet-Project   made entirely on the  Tailwind CSS library</h2>
+        </div>
+ 
+      <img src="./style/img/undraw_woman_ffrd.svg" class="w-[400px] rounded-[50%] h-[400px]">
     </div>
  
-      <img src="./style/img/undraw_woman_ffrd.svg" class="w-[300px] rounded-[50%] h-[300px] ml-[250px] mt-[40px]">
-    </div>
-   <div class="rounded-[50%] border-2  border-rose-600 w-[5000px] h-[500px]  mt-[-300px]"></div>
-      <div class="flex w-full justify-center gap-[150px] items-center mr-[400px] mt-[-150px] mb-[20px]">
-        <div class="bg-rose-500 rounded-xl w-[200px]  flex flex-col  items-center ml-[-250px] p-2" >
+      <div class="flex w-full justify-center gap-[150px] items-center mt-6">
+        <div class="bg-rose-500 rounded-xl w-[200px]  flex flex-col  items-center  p-2" >
           <img src="./style/img/undraw_coffee_time_e8cw.svg" class="rounded-[50%] w-[70px] h-[70px] bg-rose-400 mt-[20px]">
-          <h3>Обо мне</h3>
+          <h3 class="text-white font-semibold font-serif mt-4">Обо мне</h3>
           <p class="text-black h-[50px] truncate w-[150px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab veniam facilis quibusdam, iste illum dolorem ipsam excepturi accusantium non praesentium quam dicta dignissimos ullam, optio natus laudantium saepe? Aliquam qui ratione quo molestias provident expedita quas sapiente nisi, explicabo non fugit repellat hic voluptatibus eum suscipit asperiores. Eveniet.</p>
-          <button></button>
+          <button class="bg-rose-700 p-2 rounded-lg text-white active:scale-90 active:bg-rose-500 w-[100px]">show</button>
         </div> 
         <div class="bg-rose-500 rounded-xl w-[200px]  flex flex-col items-center p-2 ">
           <img src="./style/img/undraw_projections_re_ulc6.svg" class="rounded-[50%] w-[70px] h-[70px] bg-rose-400 mt-[20px]">
-          <h3>Навыки</h3>
+          <h3 class="text-white font-semibold font-serif mt-4">Навыки</h3>
           <p class="text-black h-[50px] truncate w-[150px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt non, illo, perferendis vitae ex pariatur iusto laboriosam quisquam earum vel dolorum. Neque architecto expedita explicabo consectetur veritatis? Ipsa odit repellendus quibusdam tempora dolore aspernatur sit officia consectetur. Dicta minima repellat commodi odit sed, quod cum? Iusto aliquid suscipit accusamus repudiandae.</p>
-          <button></button>
+          <button class="bg-rose-700 p-2 rounded-lg text-white active:scale-90 active:bg-rose-500 w-[100px]">show</button>
         </div>
         <div class="bg-rose-500 rounded-xl w-[200px]  flex flex-col items-center p-2 ">
           <img src="./style/img/undraw_product_explainer_8jbm.svg " class="rounded-[50%] w-[70px] h-[70px] bg-rose-400 mt-[20px]">
-          <h3>Где меня найти</h3>
+          <h3 class="text-white font-semibold font-serif mt-4">Где меня найти</h3>
           <p class="text-black h-[50px] truncate w-[150px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eos! Quasi, mollitia similique error quisquam necessitatibus dolores assumenda perferendis eius rerum, officia aperiam obcaecati eligendi quidem fugit fuga unde iste sed soluta ea voluptas sit perspiciatis eum. Deleniti a sed architecto temporibus aspernatur voluptatum unde, ratione, eum aut, sapiente quo!</p>
-          <button></button>
+          <button class="bg-rose-700 p-2 rounded-lg text-white active:scale-90 active:bg-rose-500 w-[100px]">show</button>
         </div>
       </div>
     </main>
   
-    <footer class="col-span-12 ">
+    <footer class=" ">
    <p class="font-bold text-2xl text-rose-400 bg-rose-200 p-[10px]  ">© 2024</p>
    
     </footer>
